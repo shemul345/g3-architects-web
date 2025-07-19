@@ -7,19 +7,24 @@
     font-weight: 400;
     font-style: normal;
 }
+
 .display_flex {
     display: flex;
 }
+
 .dark_2 {
     color: #424242;
 }
+
 .dark_3 {
     color: #727272;
 }
+
 .bg_primary {
     background-color: rgba(255, 144, 14, 0.1);
 }
-.btn_primary{
+
+.btn_primary {
     font-size: 1.25rem;
     font-weight: 600;
     padding: 20px 25px;
@@ -36,48 +41,56 @@
     max-width: 1440px;
     margin: 0 auto;
 }
+
 .brand_logo {
     font-size: 3rem;
     font-weight: 700;
 }
+
 .navbar_menu {
     gap: 30px;
 }
+
 .nav_item {
     list-style: none;
     font-size: 1.25rem;
     font-weight: 500;
 }
+
 .nav_link {
     text-decoration: none;
     color: #424242;
 }
 
 /* Banner styles */
-.banner{
+.banner {
     max-width: 1440px;
     margin: 0 auto;
 }
-.banner_content{
+
+.banner_content {
     max-width: 862px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 50px;
 }
-.banner_title{
+
+.banner_title {
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 20px;
 }
-.section_description{
+
+.section_description {
     margin-bottom: 50px;
 }
-.banner_profile{
+
+.banner_profile {
     width: 100%;
 }
 
 /* Features styles */
-.feature{
+.feature {
     display: flex;
     gap: 70px;
     justify-content: center;
@@ -85,51 +98,217 @@
     max-width: 1140px;
     margin: 85px auto 130px auto;
 }
-.feature_item{
+
+.feature_item {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
 }
-.feature_title{
+
+.feature_title {
     font-size: 2.81rem;
 }
-#quick_list{
+
+#quick_list {
     font-weight: 500;
 }
-.features{
+
+.features {
     color: #FF900E;
 }
 
+/* Experience styles */
+.experience {
+    max-width: 1440px;
+    margin: 0 auto;
+    gap: 140px;
+}
+
+.experience_title {
+    font-size: 2.81rem;
+    font-weight: 700;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.experience_card {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+    padding: 35px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.experience_card_title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.section_description {
+    margin-bottom: 0;
+}
+
+.experience_years {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+#experience_badge {
+    padding: 30px;
+    margin-top: -90px;
+    margin-left: -100px;
+}
+
+/* some facts styles */
+.facts {
+    max-width: 1440px;
+    margin: 130px auto 180px auto;
+}
+
+.fact_title {
+    font-size: 2.81rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.fact_description {
+    max-width: 540px;
+}
+
+.fact_cards {
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.fact_card {
+    border: 2px solid #FF900E;
+    padding: 45px 40px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card_title {
+    font-size: 2.81rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card_description {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #727272;
+}
 
 
 
-
+.hide {
+    display: none;
+}
 
 /* responsive for small devices */
 @media screen and (max-width: 576px) {
-    .display_flex{
+    .display_flex {
         flex-direction: column;
     }
-    .banner_title{
+
+    .banner_title {
         font-size: 2rem;
     }
-    .section_description{
+
+    .section_description {
         padding: 0 10px;
     }
-    .feature{
+
+    .feature {
         flex-direction: column-reverse;
     }
-    .feature_item{
+
+    .feature_item {
         grid-template-columns: repeat(1, 1fr);
     }
-    .feature_team{
+
+    .feature_team {
         width: 100%;
+    }
+
+    .architect_experience img {
+        width: 100%;
+    }
+
+    #experience_badge {
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    .fact_cards{
+        gap: 20px;
+        margin-top: 50px;
+    }
+    .facts{
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 }
 
 /* responsive medium devices */
 @media screen and (min-width: 576px) and (max-width: 992px) {
     .display_flex {
-            flex-direction: column;
-        }
+        flex-direction: column;
+    }
+
+    .feature {
+        flex-direction: column-reverse;
+    }
+
+    .feature_team {
+        width: 100%;
+    }
+
+    .architect_experience img {
+        width: 100%;
+    }
+
+    #experience_badge {
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    .fact_title, .fact_description{
+        text-align: center;
+    }
+    .fact_description{
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .fact_cards{
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+        row-gap: 30px;
+    }
+    .fact_card{
+        padding: 20px 0px;
+    }
+    .facts {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+}
+
+/* resposnsive for large devices */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .display_flex {
+        flex-direction: column;
+    }
+
+    .architect_experience img {
+        width: 100%;
+    }
+
+    #experience_badge {
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    .fact_cards{
+        flex-direction: row;
+    }
 }
